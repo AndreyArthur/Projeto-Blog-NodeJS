@@ -3,15 +3,19 @@
 <a href="/admin/postagens/add"><button class="btn btn-success">Nova Postagem</button></a>
 
 {{#each postagens}}
-  <div class="card">
+  <div class="card mt-3">
     <div class="card-body">
       <h4>{{titulo}}</h4>
       <p>{{descricao}}</p>
       <small>Categoria: <strong>{{categoria.nome}}</strong></small><br>
       <small>Data de criação: {{data}}</small><br><br>
-      <a href="/admin/postagens/edit/{{_id}}"><button class="btn btn-success">Editar postagem</button></a>
+      <a href="/admin/postagens/edit/{{_id}}"><button class="btn btn-success">Editar postagem</button></a><br>
+      <form action="/admin/postagens/deletar" method="POST">
+        <input type="hidden" name="id" value="{{_id}}"/>
+        <button type="submit" class="btn btn-danger mt-3">Deletar Postagem</button>
+      </form>
     </div>
   </div>
 {{else}}
-  <h4 class="text-black-50 mt-4">Nenhuma categoria aqui por enquanto :(</h4>
+  <h4 class="text-black-50 mt-4">Nenhuma postagem aqui por enquanto :(</h4>
 {{/each}}
