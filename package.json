@@ -1,4 +1,8 @@
-{
+  "name": "projeto-blog-nodejs",
+  "version": "1.0.0",
+  "description": "Meu primeiro projeto grande em Node, um site de blog com MongoDB que armazena os posts, usuários e categorias de posts, conta com sistema de login e logout. Tecnologias e dependências:",
+  "main": "app.js",
+=======
   "name": "projeto-blog",
   "version": "1.0.0",
   "description": "Meu primeiro projeto grande em Node, um site de blog com MongoDB que armazena os posts, usuários e categorias de posts, conta com sistema de login e logout. Tecnologias e dependências:",
@@ -14,18 +18,4 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0"
   },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AndreyArthur/Projeto-Blog-NodeJS.git"
-  },
-  "author": "Andrey Arthur",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AndreyArthur/Projeto-Blog-NodeJS/issues"
-  },
-  "homepage": "https://github.com/AndreyArthur/Projeto-Blog-NodeJS#readme"
-}
+  "devDependencies": {}
